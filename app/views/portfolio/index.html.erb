@@ -1,0 +1,6 @@
+<% @portfolios.each do |portfolio| %>
+	<div class="post_wrapper">
+    <%= image_tag @portfolio.image.url(:medium) %>
+		<h2 class="title"><%= link_to portfolio.name, portfolio %></h2>
+	</div>
+<% end %>

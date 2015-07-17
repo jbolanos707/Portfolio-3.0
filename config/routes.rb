@@ -5,6 +5,8 @@ Rails.application.routes.draw do
     resources :comments
   end
 
+  resources :portfolios
+
   root "posts#index"
 
   get '/about', to: 'pages#about'

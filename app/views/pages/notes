@@ -1,0 +1,8 @@
+<div id="profile_image">
+  <%= image_tag "jen copy.jpg" %>
+</div>
+
+<div id="content">
+  <h1>Hola! I'm Jennifer Bolanos</h1>
+  <p>Nel pastel comadrear. gabacho menso. fuchi cafre. torcido raite. cascarear refrito. naifa conchudo. chaparro chingada. churido mariachi. pachanga ándale pues. troque quebrada. calote órale. chante naco. mañoso pegoste. canijo picadero. capirucha armarla. teporocho gallo. rasquera jetón. güiri-güiri cabrón. cura coperacha. gata movida. troquita grifo.</p>
+</div>

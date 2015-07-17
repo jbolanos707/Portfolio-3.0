@@ -1,0 +1,9 @@
+<%= image_tag @portfolio.image.url(:medium) %>
+
+<p>
+  <strong>Project Name:</strong>
+  <%= @portfolio.name %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@portfolio) %>
+<%= link_to 'Back', posts_path %>

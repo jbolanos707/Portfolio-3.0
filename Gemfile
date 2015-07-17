@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.3.1'
 gem 'devise', '~> 3.5.1'
 gem 'bootstrap-sass', '~> 3.3.5'
+gem "paperclip", "~> 4.3"
 
 group :development do
   gem 'byebug'

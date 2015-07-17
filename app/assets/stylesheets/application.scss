@@ -204,10 +204,39 @@ a {
 			}
 		}
 
+		#about_image {
+			width: 1000px;
+			float: center;
+			margin-right: 2em;
+			img {
+				width: 100%;
+			}
+		}
+
 		#dev_skills {
 			width: 1000px;
 			float: center;
 			margin-right: 2em;
+			img {
+				width: 100%;
+			}
+		}
+
+		#career_header {
+			width: 1000px;
+			float: center;
+			margin-right: 2em;
+			margin-top: 5em;
+			margin-bottom: 8em;
+			img {
+				width: 100%;
+			}
+		}
+
+		#career_timeline {
+			width: 700px;
+			float: center;
+			margin-left: 10em;
 			img {
 				width: 100%;
 			}
@@ -220,6 +249,9 @@ a {
 			p {
 				font-size: 1.1em;
 				line-height: 1.75;
+				color: #9eafba;
+				margin-left: 7em;
+				margin-right: 8em;
 			}
 			a {
 				color: #33acb7;
