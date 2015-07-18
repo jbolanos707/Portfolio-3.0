@@ -1,0 +1,14 @@
+<div id="post_content">
+  <h1 class="title">
+    <%= image_tag @portfolio.image.url(:medium) %>
+		<h2 class="title"><%= link_to @portfolio.name %></h2>
+  </h1>
+
+  <p class="date">
+
+    <% if user_signed_in? %>
+      | <%= link_to "Edit", edit_portfolio_path(@portfolio) %>
+      | <%= link_to "Delete", portfolio_path(@portfolio), method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% end %>
+  </p>
+</div>

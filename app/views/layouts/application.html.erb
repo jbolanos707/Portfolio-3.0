@@ -41,6 +41,8 @@
         <p>All Posts</p>
       <% elsif current_page?(about_path) %>
         <p>About</p>
+      <% elsif current_page?(portfolios_path) %>
+        <p>Portfolio</p>
       <% else %>
         <%= link_to "Back to All Posts", root_path %>
       <% end %>

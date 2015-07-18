@@ -1,0 +1,8 @@
+<% @portfolios.each do |portfolio| %>
+
+<div>
+    <%= image_tag portfolio.image.url(:medium) %>
+		<h2 class="title"><%= link_to portfolio.name, portfolio %></h2>
+<% end %>
+
+</div>

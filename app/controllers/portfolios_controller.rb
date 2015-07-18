@@ -2,7 +2,7 @@ class PortfoliosController < ApplicationController
 
 
   def index
-    @portfolio = Portfolio.all.order('created_at DESC')
+    @portfolios = Portfolio.all
   end
 
   def new
@@ -10,9 +10,9 @@ class PortfoliosController < ApplicationController
   end
 
   def create
-    @portfolio = Portfolio.new(post_params)
+    @portfolio = Portfolio.new(portfolio_params)
     if @portfolio.save
-      redirect_to @portfolio
+      redirect_to portfolios_path
     else
       render 'new'
     end
@@ -29,8 +29,8 @@ class PortfoliosController < ApplicationController
   def update
     @portfolio = Portfolio.find(params[:id])
 
-    if @portfolio.update(params[:portfolio].permit(:name, :description, :image))
-      redirect_to @portfolio
+    if @portfolio.update(portfolio_params)
+      redirect_to portfolios_path
     else
       render 'edit'
     end
@@ -40,11 +40,11 @@ class PortfoliosController < ApplicationController
     @portfolio = Portfolio.find(params[:id])
     @portfolio.destroy
 
-    redirect_to root_path
+    redirect_to portfolios_path
   end
 
   private
-    def post_params
-      params.require(:post).permit(:title, :body, :image)
+    def portfolio_params
+      params.require(:portfolio).permit(:name, :description, :image)
     end
 end
